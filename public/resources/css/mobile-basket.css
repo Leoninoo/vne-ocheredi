@@ -1,0 +1,414 @@
+@media screen and (max-width: 1000px) {
+    .basket-box {
+        position: fixed;
+        width: 96vw;
+        height: 87vh;
+        left: 50%;
+        margin-left: -48vw;
+        bottom: -100vh;
+        z-index: 9;
+
+        background: #FFFFFF url("../images/basket-mobile-background.png") no-repeat;
+        background-size: 105vh;
+        background-position: -45vw -1.1vh;
+        box-shadow: 0 13px 14px -3px rgba(61, 35, 179, 0.09);
+        border-top-right-radius: 8vw;
+        border-top-left-radius: 8vw;
+
+        visibility: hidden;
+    }
+
+    .basket-text {
+        position: absolute;
+        left: 4vw;
+        top: 2vh;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 6vw;
+        line-height: 58px;
+
+        color: #FFFFFF;
+    }
+
+    .basket-products-box {
+        position: absolute;
+        width: 88vw;
+        height: 52vh;
+        top: 10vh;
+        left: 4vw;
+
+        background: #FFFFFF;
+        box-shadow: inset 0 13px 14px -3px rgba(61, 35, 179, 0.09);
+        border-radius: 30px;
+
+        overflow: auto;
+    }
+
+    .basket-products-box::-webkit-scrollbar {
+        width: 0.5vw;
+    }
+
+    .basket-products-box::-webkit-scrollbar-track {
+        margin-top: 4.5vw;
+        margin-right: 0.1vw;
+        margin-bottom: 4.5vw;
+    }
+
+    .basket-products-box::-webkit-scrollbar-thumb {
+        background-color: #532A9F;
+        border-radius: 20vw;
+    }
+
+    .basket-product {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .basket-product-img-background {
+        position: absolute;
+        width: 15vw;
+        height: 15vw;
+        margin-top: 1vh;
+        margin-left: 5vw;
+        padding: 1vh;
+
+        background: #FFFFFF;
+        border: 1px solid rgba(61, 35, 179, 0.1);
+        box-sizing: border-box;
+        border-radius: 15vw;
+        text-align: center;
+        background-size: cover;
+    }
+
+    .basket-product-img-background img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 3vw;
+    }
+
+    .basket-product-name {
+        position: absolute;
+        width: 30vw;
+        margin-top: 4vh;
+        margin-left: 22vw;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: 20;
+        font-size: 1.8vw;
+        line-height: 3vw;
+    }
+
+    .basket-product-counter-box {
+        position: absolute;
+        margin-top: 4.8vh;
+        margin-left: 53vw;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.5vw;
+        line-height: 4vw;
+        text-align: center;
+        color: rgba(61, 35, 179, 0.6);
+    }
+
+    .basket-product-button-minus {
+        float: left;
+        width: 4.5vw;
+        height: 4.5vw;
+        margin-top: 0.1vw;
+
+        background: #FFFFFF;
+        box-shadow: 1px 1px 1px rgba(61, 35, 179, 0.4);
+        border-radius: 5vw;
+
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .basket-product-counter {
+        float: left;
+        width: 4vw;
+        margin-top: 0.6vh;
+        margin-left: 0.3vw;
+
+        color: black;
+        font-size: 2.5vw;
+    }
+
+    .basket-product-button-plus {
+        float: right;
+        width: 4.5vw;
+        height: 4.5vw;
+        margin-left: 0.1vw;
+        margin-top: 0.1vw;
+
+        background: #FFFFFF;
+        box-shadow: 1px 1px 1px rgba(61, 35, 179, 0.4);
+        border-radius: 5vw;
+
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .basket-product-price {
+        position: absolute;
+        margin-top: 6.3vh;
+        left: 70vw;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.6vw;
+        line-height: 1.2vw;
+        text-align: center;
+    }
+
+    .basket-product-line {
+        position: absolute;
+        margin: 12vh 8vw 0;
+        height: 0;
+        width: 80%;
+
+        border-top: 0.01vw solid #3D23B3;
+        border-radius: 5vw;
+    }
+
+    .basket-prom-text {
+        position: absolute;
+        width: 15vw;
+        top: 66vh;
+        left: 6vw;
+    }
+
+    .basket-promo {
+        position: absolute;
+        width: 20vw;
+        height: 4vh;
+        top: 65vh;
+        left: 25vw;
+        padding: 0.25vw 0.7vw;
+
+        background: #FFFFFF;
+        box-shadow: inset 5px 7px 7px 2px rgba(61, 35, 179, 0.09);
+        border-radius: 5vw;
+        border: 1px solid #7D56C6;
+
+        font-family: Rubik, sans-serif;
+        font-style: revert;
+        font-size: 0.9vw;
+    }
+
+    .basket-dost-text {
+        position: absolute;
+        width: 15vw;
+        top: 75vh;
+        left: 6vw;
+    }
+
+    .basket-delivery-price {
+        position: absolute;
+        width: 15.5vw;
+        height: 3vh;
+        top: 73.5vh;
+        left: 25vw;
+
+        font-family: Rubik, sans-serif;
+        font-style: revert;
+        font-size: 3vw;
+        text-align: left;
+        padding-left: 5vw;
+        padding-top: 1.2vw;
+        color: #000000;
+
+        background: #FFFFFF;
+        border-radius: 5vw;
+        border: 1px solid #7D56C6
+    }
+
+    .button-clear {
+        position: absolute;
+        top: 65vh;
+        right: 5vw;
+    }
+
+    .button-clear:hover {
+        top: 65vh;
+    }
+
+    .button-clear input {
+        width: 28vw;
+        height: 4vh;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-size: 2.2vw;
+        line-height: 1vw;
+        text-align: left;
+        padding-left: 3vw;
+        color: #FFFFFF;
+
+        background: #532A9F;
+        border-radius: 5vw;
+        border: #532A9F;
+    }
+
+    .basket-sum-text {
+        position: absolute;
+        width: 23vw;
+        top: 83vh;
+        left: 6vw;
+    }
+
+    .basket-sum {
+        position: absolute;
+        left: 32vw;
+        top: 82.2vh;
+
+        font-family: Rubik, sans-serif;
+        font-style: revert;
+        font-size: 4vw;
+        text-align: left;
+        padding-left: 1vw;
+        color: #000000;
+    }
+
+    .button-basket {
+        position: absolute;
+        top: 81vh;
+        right: 5vw;
+    }
+
+    .button-basket:hover {
+        bottom: 2.2vw;
+    }
+
+    .button-basket input {
+        width: 28vw;
+        height: 4vh;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-size: 2.2vw;
+        line-height: 1vw;
+        text-align: left;
+        padding-left: 3vw;
+        color: #FFFFFF;
+
+        background: #532A9F;
+        border-radius: 5vw;
+        border: #532A9F;
+    }
+
+    .map {
+        width: 100%;
+        height: 100%;
+    }
+
+    .basket-form {
+        position: absolute;
+        top: 65vh;
+        bottom: -5vh;
+        left: 6vw;
+        right: 6vw;
+    }
+
+    .basket-form-input {
+        position: absolute;
+        width: 30vw;
+        height: 4vh;
+        padding-left: 2.5vw;
+
+        background: #FFFFFF;
+        box-shadow: inset 3px 11px 10px -7px rgba(61, 35, 179, 0.09);
+        border-radius: 36px;
+        border: 1px solid #7D56C6;
+    }
+
+    #basket-street {
+        top: 1.5vh;
+        left: 15vw;
+    }
+
+    #basket-apartment {
+        width: 15vw;
+        top: 1.5vh;
+        left: 70vw;
+    }
+
+    #basket-entrance {
+        top: 7vh;
+        left: 15vw;
+    }
+
+    #basket-floor {
+        width: 15vw;
+        top: 7vh;
+        left: 70vw;
+    }
+
+    .basket-form-label {
+        position: absolute;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3.2vw;
+        text-align: left;
+        padding-left: 1vw;
+        color: #000000;
+    }
+
+    #basket-street-label {
+        top: 2vh;
+        left: -1.5vw;
+    }
+
+    #basket-apartment-label {
+        top: 2vh;
+        left: 50vw;
+    }
+
+    #basket-entrance-label {
+        top: 7.8vh;
+        left: -1.5vw;
+    }
+
+    #basket-floor-label {
+        top: 7.8vh;
+        left: 50vw;
+    }
+
+    #basket-button-back {
+        position: absolute;
+        width: 6vw;
+        height: 6vw;
+        top: 12vh;
+        right: -1vw;
+
+        background: #FFFFFF;
+        box-shadow: inset 3px 11px 10px -7px rgba(61, 35, 179, 0.09);
+        border-radius: 10vw;
+    }
+
+    #basket-button-back img {
+        width: 5.5vw;
+    }
+
+    #basket-map-box {
+        overflow: hidden;
+    }
+
+    #button-basket-pay-wrap {
+        top: 16vh;
+        right: -1vw;
+    }
+}

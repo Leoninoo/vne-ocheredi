@@ -1,0 +1,75 @@
+@media screen and (max-width: 1000px) {
+    .menu-box {
+        position: fixed;
+        width: 60vw;
+        height: 100%;
+        left: -60vw;
+
+        background: #FFFFFF;
+        border-top-right-radius: 5vw;
+        border-bottom-right-radius: 5vw;
+        z-index: 7;
+    }
+
+    .menu-search {
+        position: absolute;
+        width: 40vw;
+        height: 6vw;
+        left: 5vw;
+        top: 8.5vw;
+
+        padding: 1vw 4vw;
+        color: #532A9F;
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.5vw;
+        line-height: 16vw;
+
+        border: 0.1vw solid #532A9F;
+        box-sizing: border-box;
+        border-radius: 12vw;
+    }
+
+    input[class="menu-search"]::-webkit-input-placeholder {
+        color: #532A9F;
+    }
+
+    input[class="menu-search"]::-moz-placeholder {
+        color: #532A9F;
+    }
+
+    .menu-main-box {
+        position: absolute;
+        top: 30vw;
+        left: 5vw;
+        width: 30vw;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3vw;
+        line-height: 1vw;
+
+        color: #532A9F;
+    }
+
+    .menu-login {
+        position: absolute;
+    }
+
+    .menu-work {
+        position: absolute;
+        top: 20vw;
+    }
+
+    .menu-help {
+        position: absolute;
+        top: 40vw;
+    }
+
+    .menu-questions {
+        position: absolute;
+        top: 110vw;
+    }
+}

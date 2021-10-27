@@ -1,0 +1,265 @@
+.overlay {
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+    height: 150%;
+    background: black;
+    opacity: .7;
+    z-index: 6;
+
+    visibility: hidden;
+}
+
+.login-form-box {
+    position: fixed;
+    width: 30vw;
+    height: 40vw;
+    left: 50%;
+    top: 7vw;
+    margin-left: -15vw;
+    z-index: 9;
+
+    background: #FFFFFF;
+    box-shadow: 0 13px 14px -3px rgba(61, 35, 179, 0.09);
+    border-radius: 36px;
+
+    visibility: hidden;
+}
+
+.close {
+    position: absolute;
+    top: 1.5vw;
+    right: 2.5vw;
+    width: 1.3vw;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.login-sign-in {
+    position: absolute;
+    top: 5vw;
+    left: 3.65vw;
+    width: 3.2vw;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.login-sign-up {
+    position: absolute;
+    top: 5vw;
+    left: 8.5vw;
+    width: 3.2vw;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.login-line-under {
+    position: absolute;
+    height: 0;
+    width: 3vw;
+    top: 6.5vw;
+    left: 3.65vw;
+    background-color: #3D23B3;
+    border: 0.1vw solid #3D23B3;
+    border-radius: 5vw;
+}
+
+.form-sign-in {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: -2vw;
+}
+
+.form-sign-up {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: -2vw;
+
+    visibility: hidden;
+}
+
+.form-styling {
+    position: absolute;
+    width: 22vw;
+    height: 3vw;
+    left: 50%;
+    margin-left: -11vw;
+
+    padding: 0 1.3vw;
+    border: 1px solid #3D23B3;
+    box-sizing: border-box;
+    border-radius: 98px;
+}
+
+label {
+    position: absolute;
+    left: 4.5vw;
+
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    line-height: 21px;
+    color: #3D23B3;
+}
+
+#login-in {
+    top: 13vw;
+}
+
+#login-in-label {
+    top: 11vw;
+}
+
+#password-in {
+    top: 19vw;
+}
+
+#password-in-label {
+    top: 17vw;
+}
+
+#login-reg {
+    top: 13vw;
+}
+
+#login-reg-label {
+    top: 11.5vw;
+    left: 7.5vw;
+}
+
+#email {
+    top: 18vw;
+}
+
+#email-label {
+    top: 16.5vw;
+    left: 7.5vw;
+}
+
+#number {
+    top: 23vw;
+}
+
+#phone-label {
+    top: 21.5vw;
+    left: 7.5vw;
+}
+
+#password-reg {
+    top: 28vw;
+}
+
+#password-reg-label {
+    top: 26.5vw;
+    left: 7.5vw;
+}
+
+#confirm-password {
+    top: 33vw;
+}
+
+#confirm-password-label {
+    top: 31.5vw;
+    left: 7.5vw;
+}
+
+.login-logo {
+    position: absolute;
+    top: 3.5vw;
+    right: 3vw;
+    width: 11vw;
+}
+
+.login-error-text {
+    position: absolute;
+    width: 12vw;
+    bottom: 16.5vw;
+    left: 50%;
+    margin-left: -6vw;
+
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 0.8vw;
+    text-align: center;
+    line-height: 21px;
+    color: #e54848;
+}
+
+.signup-error-text {
+    position: absolute;
+    width: 16vw;
+    bottom: 6.5vw;
+    left: 50%;
+    margin-left: -8vw;
+
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 50;
+    font-size: 0.75vw;
+    text-align: center;
+    line-height: 21px;
+    color: #e54848;
+}
+
+.login-keep {
+    position: absolute;
+    width: 7vw;
+    bottom: 14vw;
+    left: 50%;
+    margin-left: -3.5vw;
+}
+
+.login-line {
+    position: absolute;
+    width: 22vw;
+    bottom: 11.5vw;
+    left: 50%;
+    margin-left: -11vw;
+}
+
+.signup-line {
+    position: absolute;
+    width: 22vw;
+    bottom: 8vw;
+    left: 50%;
+    margin-left: -11vw;
+}
+
+.login-forgot {
+    position: absolute;
+    width: 9vw;
+    bottom: 8.5vw;
+    left: 50%;
+    margin-left: -4.5vw;
+}
+
+.button-login {
+    position: absolute;
+    bottom: 3.5vw;
+    left: 50%;
+    margin-left: -4.5vw;
+
+    transition-property: bottom;
+    transition-duration: 0.3s;
+}
+
+.button-login:hover {
+    bottom: 4vw;
+}
+
+.button-login input {
+    width: 9vw;
+    height: 2.5vw;
+
+    font-family: Rubik, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.7vw;
+    line-height: 1vw;
+    color: #FFFFFF;
+
+    background: #532A9F;
+    border-radius: 98px;
+    border: #532A9F;
+
+    cursor: pointer;
+}

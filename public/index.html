@@ -1,0 +1,321 @@
+<html lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Вне очереди</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.6">
+
+  <link rel="icon" type="image/png" href="resources/images/logo.png"/>
+  <link rel="stylesheet" href="resources/css/header.css">
+  <link rel="stylesheet" href="resources/css/index.css">
+  <link rel="stylesheet" href="resources/css/second.css">
+  <link rel="stylesheet" href="resources/css/third.css">
+  <link rel="stylesheet" href="resources/css/login.css">
+  <link rel="stylesheet" href="resources/css/basket.css">
+
+  <link rel="stylesheet" href="resources/css/mobile-index.css">
+  <link rel="stylesheet" href="resources/css/mobile-menu.css">
+  <link rel="stylesheet" href="resources/css/mobile-login.css">
+  <link rel="stylesheet" href="resources/css/mobile-basket.css">
+
+  <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <script type="text/javascript" src="resources/libs/fullpage/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="resources/libs/fullpage/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="resources/libs/fullpage/jquery.slimscroll.min.js"></script>
+  <script type="text/javascript" src="resources/js/jqueryrotate.2.1.js"></script>
+
+  <script type="text/javascript" src="resources/js/index.js"></script>
+  <script type="text/javascript" src="resources/js/login.js"></script>
+  <script type="text/javascript" src="resources/js/basket.js"></script>
+
+  <script type="text/javascript" src="resources/js/menu.js"></script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=32b74469-a615-4d8c-84df-f46c1507d9ba" type="text/javascript"></script>
+  <script src="resources/js/yaMap.js"></script>
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="login-form-box" id="login-form-box">
+      <img class="close" id="login-close" src="resources/images/close.svg" alt="close">
+
+      <img class="login-logo" src="resources/images/logo-login.png" alt="logo-login">
+
+      <img class="login-sign-in" src="resources/images/sign-in.svg" alt="sign-in">
+      <img class="login-sign-up" src="resources/images/sign-up.svg" alt="sign-up">
+      <div class="login-line-under"></div>
+
+      <form class="form-sign-in" action="https://vne-ocheredi.herokuapp.com/login?request=index" method="post" id="form-sign-in" >
+        <label for="login-in" id="login-in-label">Логин</label>
+        <input class="form-styling" type="text" id="login-in" name="login" placeholder=""/>
+        <label for="password-in" id="password-in-label">Пароль</label>
+        <input class="form-styling" type="password" id="password-in" name="password" placeholder=""/>
+
+        <img class="login-keep" src="resources/images/keep.svg" alt="keep">
+        <img class="login-line" src="resources/images/line.png" alt="line">
+        <img class="login-forgot" src="resources/images/forgot.svg" alt="forgot">
+
+        <div class="login-error-text" id="login-error-text"></div>
+
+        <div class="button-login">
+          <input type="submit" class="btn-signin" value="Войти">
+        </div>
+      </form>
+
+      <form class="form-sign-up" action="https://vne-ocheredi.herokuapp.com/register?request=index" method="post" id="form-sign-up" >
+        <label for="login-reg" id="login-reg-label">Логин</label>
+        <input class="form-styling" type="text" id="login-reg" pattern="^[a-zA-Z]{1}[a-zA-Z0-9]{4,20}" name="login" required aria-required="true"/>
+        <label for="email" id="email-label">Email</label>
+        <input class="form-styling" type="email" id="email" name="mail" required aria-required="true"/>
+        <label for="number" id="phone-label">Телефон</label>
+        <input class="form-styling" type="tel" pattern="\+7[0-9]{10}" id="number" name="number" value="+7" required aria-required="true"/>
+        <label for="password-reg" id="password-reg-label">Пароль</label>
+        <input class="form-styling" type="password" id="password-reg" name="password" pattern="^[a-zA-Z0-9.]{8,35}" required aria-required="true"/>
+        <label for="confirm-password" id="confirm-password-label">Подтверждение пароля</label>
+        <input class="form-styling" type="password" id="confirm-password" name="confirm" size="35" minlength="8" required aria-required="true"/>
+
+        <img class="signup-line" src="resources/images/line.png" alt="line">
+
+        <div class="signup-error-text" id="signup-error-text"></div>
+
+        <div class="button-login">
+          <input type="submit" class="btn-signup" value="Зарегистрироваться">
+        </div>
+      </form>
+    </div>
+
+    <div class="basket-box" id="basket-box">
+      <div id="basket-first">
+        <div class="basket-text">Корзина</div>
+
+        <img class="close" id="basket-close" src="resources/images/close.svg" alt="close">
+
+        <div class="basket-product" id="basket-product" style="visibility: hidden">
+          <div class="basket-product-img-background" id="basket-product-img-background">
+            <img src="https://static07.vprok.ru/src/product.file/full.w/image/65/61/76165.jpeg" alt="product">
+          </div>
+
+          <div class="basket-product-name" id="basket-product-name">Помидоры сливовидные красные 600г упаковка</div>
+
+          <div class="basket-product-counter-box" id="basket-product-counter-box">
+            <div class="basket-product-button-minus" id="basket-product-button-minus">-</div>
+            <div class="basket-product-counter" id="basket-product-counter">1</div>
+            <div class="basket-product-button-plus" id="basket-product-button-plus">+</div>
+          </div>
+
+          <div class="basket-product-price" id="basket-product-price">245,9 руб</div>
+
+          <div class="basket-product-line"></div>
+        </div>
+
+        <div class="basket-products-box" id="basket-products-box">
+        </div>
+
+        <img class="basket-prom-text" src="resources/images/prom.svg" alt="prom">
+        <label for="basket-promo"></label>
+        <input class="basket-promo" id="basket-promo" type="text">
+        <img class="basket-dost-text" src="resources/images/dost.svg" alt="dost">
+        <div class="basket-delivery-price">50 руб</div>
+
+        <div class="button-clear">
+          <input type="submit" class="button-basket-clear" value="Очистить корзину">
+        </div>
+
+        <img class="basket-sum-text" src="resources/images/basket-sum.svg" alt="sum">
+        <div class="basket-sum">210 руб</div>
+
+        <div class="button-basket">
+          <input type="submit" class="button-basket-cont" id="button-basket-next" value="Продолжить">
+        </div>
+      </div>
+
+      <div id="basket-second" style="visibility: hidden">
+        <div class="basket-text">Доставка</div>
+
+        <img class="close" id="basket-close-second" src="resources/images/close.svg" alt="close">
+
+        <div class="basket-products-box" id="basket-map-box">
+          <div class="map" id="map"></div>
+        </div>
+
+        <form class="basket-form" action="" method="post" id="basket-form" >
+          <label class="basket-form-label" id="basket-street-label" for="basket-street">Улица</label>
+          <input class="basket-form-input" id="basket-street">
+
+          <label class="basket-form-label" id="basket-apartment-label" for="basket-apartment">Квартира</label>
+          <input class="basket-form-input" id="basket-apartment">
+
+          <label class="basket-form-label" id="basket-entrance-label" for="basket-entrance">Подъезд</label>
+          <input class="basket-form-input" id="basket-entrance">
+
+          <label class="basket-form-label" id="basket-floor-label" for="basket-floor">Этаж</label>
+          <input class="basket-form-input" id="basket-floor">
+
+          <div id="basket-button-back">
+            <img src="resources/images/basket-back.svg" alt="back">
+          </div>
+
+          <div class="button-basket" id="button-basket-pay-wrap">
+            <input type="submit" class="button-basket-cont" id="button-basket-pay" value="Оплатить">
+          </div>
+        </form>
+
+        <img class="basket-sum-text" src="resources/images/basket-sum.svg" alt="sum">
+        <div class="basket-sum">210 руб</div>
+      </div>
+    </div>
+
+    <div class="menu-box">
+      <input type="text" name="search" class="menu-search" id="menu-search" placeholder="Поиск?">
+
+      <div class="menu-main-box">
+        <div class="menu-login">Войти</div>
+        <div class="menu-work">Как мы работаем</div>
+        <div class="menu-help">Помощь</div>
+
+        <div class="menu-questions">
+          <p>Есть вопросы?</p>
+          <p>8 999 063 70 91</p>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="header-container">
+        <label for="header-search"></label>
+        <input type="text" name="search" class="header-search" id="header-search" placeholder="Поиск?">
+
+        <div class="header-questions">
+          <p>Есть вопросы?</p>
+          <p>8 999 063 70 91</p>
+        </div>
+
+        <div class="header-menu-icon">
+          <img class="header-menu-first" src="resources/images/mobile-menu-img.svg" alt="menu">
+          <img class="header-menu-second" src="resources/images/mobile-menu-img.svg" alt="menu">
+          <img class="header-menu-third" src="resources/images/mobile-menu-img.svg" alt="menu">
+        </div>
+
+        <a href="index"><div class="header-logo">
+          <img src="resources/images/logo.svg" alt="logo">
+        </div></a>
+
+        <img class="header-basket-img" src="resources/images/basket-img.svg" alt="basket">
+
+        <div class="header-right">
+          <div class="header-work"><a href="index#how-we-work">Как мы работаем</a></div>
+
+          <div class="header-help">Помощь</div>
+
+          <div class="header-basket">Корзина</div>
+
+          <div class="header-login">Войти</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-yellow-back" data-aos="fade-right">
+      <div class="main-text-get">Получай свои продукты</div>
+      <div class="main-text-vne">ВНЕ</div>
+      <div class="main-text-och">ОЧЕРЕДИ</div>
+
+      <div class="main-strelka">
+        <img class="main-strelka-img" src="resources/images/strelka.svg" alt="Купить покушать">
+      </div>
+      <a class="second-category" href="catalog"><div class="button-main-buy">
+        <div class="button-main-buy-text">Купить покушать</div>
+      </div></a>
+    </div>
+
+    <div class="main-image-box">
+      <img class="main-circle" src="resources/images/main-circle.png" alt="circle">
+
+      <div class="main-circle-white" data-aos="fade-down-left"><img src="resources/images/main-circle-white.png" alt="circle"></div>
+
+      <div class="main-hand" data-aos="fade-up-right"><img src="resources/images/hand.svg" alt="hand"></div>
+
+      <img class="main-dots" src="resources/images/dots.svg" alt="dots">
+    </div>
+
+
+    <div class="second-box">
+      <div class="second-go" data-aos="fade-right">Перейти</div>
+      <div class="second-buys" data-aos="fade-left">к покупкам</div>
+
+      <div class="second-categories">
+        <div class="second-cat-backgr" data-aos="fade-left"></div>
+
+        <div class="second-categories-box">
+          <a class="second-category" id="cat1"  href="catalog?category=milk"><img src="resources/images/second-milk.png" alt="milk"></a>
+          <a class="second-category" id="cat2"  href="catalog?category=meat"><img src="resources/images/second-meat.png" alt="meat"></a>
+          <a class="second-category" id="cat3"  href="catalog?category=fish"><img src="resources/images/second-fish.png" alt="fish"></a>
+          <a class="second-category" id="cat4"  href="catalog?category=water"><img src="resources/images/second-water.png" alt="water"></a>
+          <a class="second-category" id="cat5"  href="catalog?category=tea"><img src="resources/images/second-tea.png" alt="tea"></a>
+          <a class="second-category" id="cat6"  href="catalog?category=vegetables"><img src="resources/images/second-tea.png" alt="tea"></a>
+          <a class="second-category" id="cat7"  href="catalog?category=cereals"><img src="resources/images/second-tea.png" alt="tea"></a>
+          <a class="second-category" id="cat8"  href="catalog?category=sauces"><img src="resources/images/second-tea.png" alt="tea"></a>
+          <a class="second-category" id="cat9"  href="catalog?category=bread"><img src="resources/images/second-tea.png" alt="tea"></a>
+          <a class="second-category" id="cat10"  href="catalog?category=sweet"><img src="resources/images/second-tea.png" alt="tea"></a>
+          <a class="second-category" id="cat11"  href="catalog?category=health"><img src="resources/images/second-tea.png" alt="tea"></a>
+          <a class="second-category" id="cat12"  href="catalog?category=freeze"><img src="resources/images/second-tea.png" alt="tea"></a>
+          <a class="second-category" id="cat13"  href="catalog?category=beauty"><img src="resources/images/second-tea.png" alt="tea"></a>
+          <a class="second-category" id="cat14"  href="catalog?category=house"><img src="resources/images/second-tea.png" alt="tea"></a>
+          <a class="second-category" id="cat15"  href="catalog?category=milk"><img src="resources/images/second-tea.png" alt="tea"></a>
+        </div>
+
+        <img class="second-left-cat" src="resources/images/left-cat.svg" alt="left">
+        <img class="second-right-cat" src="resources/images/right-cat.svg" alt="right">
+      </div>
+
+      <div class="second-text">
+        <div class="second-how" data-aos="second-how">Как</div>
+        <div class="second-we" data-aos="fade-down">мы</div>
+        <div class="second-work" data-aos="fade-up">работаем</div>
+
+        <div class="second-text-op">
+          Вы делаете заказ на сайте или в приложении.
+          Наш курьер получает заказ и идет в ближайший к вашему дому магазин.
+          В магазине курьер собирает ваш заказ. Если какой-то товар закончился или испорчен,
+          вам позвонят и предложат заменить его на похожий. Далее курьер доставит заказ прямо к вашей двери.
+          <br><br>
+          Все наши курьеры внимательно следят за качеством и сроком годности доставляемых товаров.
+        </div>
+      </div>
+
+      <img class="second-dots" src="resources/images/dots.svg" alt="dots">
+    </div>
+
+
+    <div class="third-box">
+      <div class="third-yellow-back" data-aos="fade-right">
+        <img class="third-del" src="resources/images/third-del.png" alt="del">
+
+        <img class="third-pay" src="resources/images/third-pay.png" alt="pay">
+      </div>
+
+      <div class="third-download" data-aos="fade-right">Скачивай</div>
+      <div class="third-app" data-aos="fade-left">наше приложение</div>
+
+      <div data-aos="fade-down" class="third-phone-back">
+        <img class="third-phone" src="resources/images/phone.png" alt="phone">
+        <img class="third-google" src="resources/images/go-google.png" alt="google">
+        <img class="third-appstore" src="resources/images/go-appstore.png" alt="appstore">
+      </div>
+
+      <img class="third-dots" src="resources/images/dots.svg" alt="dots">
+
+      <footer>
+        <img class="footer" src="resources/images/footer.png" alt="footer">
+      </footer>
+    </div>
+
+
+<script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
+<script  src="resources/js/script.js"></script>
+</body>
+</html>

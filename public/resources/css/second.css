@@ -1,0 +1,235 @@
+@media screen and (min-width: 1000px) {
+    .second-go {
+        position: absolute;
+        left: 67.7vw;
+        top: 58vw;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3vw;
+
+        color: #532A9F;
+    }
+
+    .second-buys {
+        position: absolute;
+        left: 67.8vw;
+        top: 60.8vw;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.25vw;
+        color: #532A9F;
+    }
+
+    .second-categories {
+        position: absolute;
+        top: 67vw;
+        z-index: -1;
+    }
+
+    .second-cat-backgr {
+        position: absolute;
+        width: 70vw;
+        height: 15.5vw;
+        left: 50vw;
+        top: -1vw;
+
+        background: linear-gradient(92.64deg, #532A9F 5.21%, #7D56C6 52.21%);
+        box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 213px;
+    }
+
+    .second-left-cat {
+        position: absolute;
+        top: 6vw;
+        left: 15.5vw;
+        width: 1vw;
+
+        cursor: pointer;
+    }
+
+    .second-right-cat {
+        position: absolute;
+        top: 6vw;
+        left: 82vw;
+        width: 1vw;
+
+        cursor: pointer;
+    }
+
+    .second-categories-box {
+        position: absolute;
+        left: 18vw;
+        width: 70vw;
+    }
+
+    .second-category {
+        position: absolute;
+        width: 12vw;
+        top: 1vw;
+        transition-property: top;
+        transition-duration: 0.3s;
+    }
+
+    .second-category:hover {
+        top: 0;
+    }
+
+    .second-category img {
+        width: 100%;
+    }
+
+    .second-text {
+        position: absolute;
+        top: 93vw;
+        left: 18vw;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        color: #532A9F;
+    }
+
+    .second-how {
+        position: absolute;
+
+        left: -5vw;
+        opacity: 0;
+
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+
+        font-size: 2.75vw;
+    }
+
+    .second-how.aos-animate {
+        left: -1vw;
+        opacity: 100%;
+
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .second-we {
+        position: absolute;
+        top: -2.75vw;
+        left: 3vw;
+        font-size: 4.25vw;
+    }
+
+    .second-work {
+        position: absolute;
+        left: 3vw;
+        top: 1.2vw;
+        font-size: 3.25vw;
+    }
+
+    .second-text-op {
+        position: absolute;
+        top: -2vw;
+        left: 39vw;
+        width: 23vw;
+
+        color: black;
+        font-size: 0.75vw;
+    }
+
+    .second-dots {
+        position: absolute;
+        width: 21vw;
+        left: -0.2vw;
+        top: 79vw;
+        z-index: -1;
+
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    #cat2 {
+        left: 12.85vw;
+    }
+
+    #cat3 {
+        left: 25.7vw;
+    }
+
+    #cat4 {
+        left: 38.55vw;
+    }
+
+    #cat5 {
+        left: 51.4vw;
+    }
+
+    #cat6 {
+        left: 52vw;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #cat7 {
+        left: 52vw;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #cat8 {
+        left: 52vw;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #cat9 {
+        left: 52vw;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #cat10 {
+        left: 52vw;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #cat11 {
+        left: 52vw;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #cat12 {
+        left: 52vw;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #cat13 {
+        left: 52vw;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #cat14 {
+        left: 52vw;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #cat15 {
+        left: 52vw;
+        opacity: 0;
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,369 @@
+@media screen and (max-width: 1000px) {
+    .header-logo {
+        position: absolute;
+        width: 20vw;
+        left: 50%;
+        top: 2vh;
+        margin-left: -10vw;
+
+        visibility: visible;
+    }
+
+    .header-logo img {
+        width: 100%;
+    }
+
+    .header-basket-img {
+        position: absolute;
+        width: 11vw;
+        right: 6.5vw;
+        top: 4.5vw;
+
+        visibility: visible;
+    }
+
+    .header-menu-icon {
+        position: absolute;
+        width: 8vw;
+        height: 7vw;
+        left: 7vw;
+        top: 9vw;
+
+        visibility: visible;
+        z-index: 8;
+    }
+
+    .header-menu-first {
+        position: absolute;
+        width: 8vw;
+    }
+
+    .header-menu-second {
+        position: absolute;
+        top: 2vw;
+        width: 8vw;
+    }
+
+    .header-menu-third {
+        position: absolute;
+        top: 4vw;
+        width: 8vw;
+    }
+
+    .main-yellow-back {
+        position: absolute;
+        width: 190vw;
+        height: 75vh;
+        left: -97.5vw;
+        top: 15vh;
+
+        background: linear-gradient(90.39deg, #FFE049 34.77%, #FED15C 100.68%);
+        box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 40vh;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    .main-text-get {
+        position: absolute;
+        left: 104.8vw;
+        width: 68vw;
+        top: 16vh;
+
+        color: #FFFFFF;
+        font-size: 8.5vw;
+        line-height: 5.5vh;
+    }
+
+    .main-text-vne {
+        position: absolute;
+        left: 104.5vw;
+        top: 28vh;
+
+        color: #532A9F;
+        font-size: 10vw;
+    }
+
+    .main-text-och {
+        position: absolute;
+        right: 25vw;
+        top: 34.2vh;
+
+        color: #532A9F;
+        font-size: 10vw;
+    }
+
+    .main-strelka {
+        visibility: hidden;
+    }
+
+    .button-main-buy {
+        position: absolute;
+        width: 45vw;
+        height: 6vh;
+        left: 105vw;
+        top: 50vh;
+
+        border: 2px solid #FFFFFF;
+        border-radius: 120vw;
+        transition-property: background, border;
+        transition-duration: 0.3s;
+    }
+
+    .button-main-buy-text {
+        position: absolute;
+        margin-left: 2.5vw;
+        margin-top: -2.5vw;
+        top: 50%;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3vw;
+        line-height: 160%;
+
+        color: #FFFFFF;
+    }
+
+    .second-go {
+        position: absolute;
+        right: 7vw;
+        top: 105vh;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12vw;
+        white-space: nowrap;
+
+        color: #532A9F;
+    }
+
+    .second-buys {
+        position: absolute;
+        right: 7vw;
+        top: 112vh;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 9vw;
+        white-space: nowrap;
+
+        color: #532A9F;
+    }
+
+    .second-categories {
+        position: absolute;
+        top: 130vh;
+        z-index: -1;
+    }
+
+    .second-cat-backgr {
+        position: absolute;
+        width: 80vw;
+        height: 35vh;
+        left: 20vw;
+        top: -1vw;
+
+        background: linear-gradient(92.64deg, #532A9F 5.21%, #7D56C6 52.21%);
+        box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+        border-bottom-left-radius: 213px;
+        border-top-left-radius: 213px;
+
+        z-index: -2;
+    }
+
+    .second-left-cat {
+        visibility: hidden;
+    }
+
+    .second-right-cat {
+        visibility: hidden;
+    }
+
+    .second-categories-box {
+        width: 90vw;
+        height:35vh;
+        margin-top: 5vh;
+        margin-left: 5vh;
+
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .second-categories-box img {
+        width: 100%;
+        float: left;
+    }
+
+    .second-category {
+        display: inline-block;
+        width: 25vh;
+        height: 25vh;
+    }
+
+    .second-text {
+        position: absolute;
+        top: 180vh;
+        left: 7.5vw;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        color: #532A9F;
+    }
+
+    .second-how {
+        position: absolute;
+        left: -7.5vw;
+        opacity: 0;
+
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+
+        font-size: 9vw;
+    }
+
+    .second-how.aos-animate {
+        left: -4.5vw;
+        opacity: 100%;
+
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .second-we {
+        position: absolute;
+        top: -7.5vw;
+        left: 8vw;
+        font-size: 11.5vw;
+    }
+    .second-work {
+        position: absolute;
+        top: 2.5vw;
+        left: 8vw;
+        font-size: 11vw;
+    }
+
+
+    .second-text-op {
+        position: absolute;
+        top: 32vw;
+        left: 30vw;
+        width: 55vw;
+
+        color: black;
+        font-size: 3vw;
+    }
+
+    .second-dots {
+        position: absolute;
+        width: 40vw;
+        left: -0.2vw;
+        top: 190vh;
+        z-index: -1;
+
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .third-yellow-back {
+        position: absolute;
+        width: 190vw;
+        height: 75vh;
+        left: -97.5vw;
+        top: 240vh;
+
+        background: linear-gradient(90.39deg, #FFE049 34.77%, #FED15C 100.68%);
+        box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.25);
+        border-radius: 40vh;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    .third-del {
+        position: absolute;
+        right: 15vw;
+        width: 70vw;
+        top: 15%;
+    }
+
+    .third-pay {
+        position: absolute;
+        right: 27vw;
+        width: 58vw;
+        top: 60%;
+    }
+
+    .third-download {
+        position: absolute;
+        left: 7.5vw;
+        top: 320vh;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 8.1vw;
+        color: #532A9F;
+    }
+
+    .third-app {
+        position: absolute;
+        left: 8.5vw;
+        top: 325vh;
+
+        font-family: Rubik, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4.25vw;
+        color: #532A9F;
+    }
+
+    .third-phone-back {
+        z-index: -1;
+        position: absolute;
+        top: 340vh;
+        right: 8vw;
+    }
+
+    .third-phone {
+        width: 80vw;
+        z-index: -1;
+    }
+
+    .third-google {
+        position: absolute;
+        top: 42vw;
+        right: 22vw;
+        width: 40vw;
+    }
+
+    .third-appstore {
+        position: absolute;
+        top: 70vw;
+        right: 18.5vw;
+        width: 47.15vw;
+    }
+
+    .third-dots {
+        visibility: hidden;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+}
